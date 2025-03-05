@@ -1,0 +1,95 @@
+
+.profile {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 2px solid #444;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff0000;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+
+.profile h2 {
+    font-size: 24px;
+    color: #e60000;
+    margin: 5px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.7);
+}
+
+
+.profile p {
+    font-size: 16px;
+    color: #bbb;
+    margin: 4px 0;
+    font-style: italic;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(50, 50, 50, 0.5);
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-top: 15px;
+    backdrop-filter: blur(8px);
+}
+
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    cursor: pointer;
+}
+
+.stats li:hover {
+    background: rgba(255, 0, 0, 0.4);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+
+.stats li:not(:last-child) {
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.stats span:first-child {
+    font-size: 14px;
+    color: #ff6666;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.stats span:last-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}

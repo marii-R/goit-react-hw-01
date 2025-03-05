@@ -1,0 +1,59 @@
+
+.friendListItem {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(135deg, #222, #111);
+  border-radius: 10px;
+  border: 2px solid #444;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+.friendListItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+}
+
+
+.friendListItem img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.friendListItem:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+
+.friendListItem p {
+  font-size: 18px;
+  color: #ddd;
+  font-weight: bold;
+  margin-left: 10px;
+ 
+}
+
+.status {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+.online {
+  color: #00ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.offline {
+  color: #ff0000;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
